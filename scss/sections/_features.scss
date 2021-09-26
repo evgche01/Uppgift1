@@ -1,8 +1,10 @@
 #features {
     .container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto auto;
+        display:flex;
+        // display: grid;
+        // grid-template-columns: 1fr 2fr;
+        // grid-template-rows: auto auto;
+        margin-top: 2rem;
     }
 
         .features-content {
@@ -40,14 +42,16 @@
             row-gap: 4rem;
             column-gap: 10rem;
 
-            h1 {
-                font-size: 22px;
-                color: $color-headline;
-                font-family: $headline-font;
-                padding-bottom: 1rem;
-            }
-            p {
-                line-height: 1.6;
+            .item {
+                h1 {
+                    font-size: 22px;
+                    color: $color-headline;
+                    font-family: $headline-font;
+                    padding-bottom: 1rem;
+                }
+                p {
+                    line-height: 1.6;
+                }
             }
 
             // .item1 {
