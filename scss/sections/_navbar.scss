@@ -1,4 +1,5 @@
 #navbar {
+    
     .container {
         display: flex;
         justify-content: space-between;
@@ -11,6 +12,7 @@
     }
 
     .navbar-links {
+        z-index: 3;
 
         display: none;
         align-items: center;
@@ -50,6 +52,13 @@
 
         .btn-outline {
             border-color: $color-orange;
+        }
+    
+        .btn:hover {
+            background-color: $color-orange;
+            color: $color-light;
+            cursor: pointer;
+            transition: background-color 0.25s ease-in-out;
         }
     
 }
