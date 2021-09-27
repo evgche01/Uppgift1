@@ -68,3 +68,8 @@ html, body {
     .px-#{$amount} {padding-left: #{$amount + "%"}; padding-right: #{$amount + "%"}; }
     .py-#{$amount} {padding-top: #{$amount + "%"}; padding-bottom: #{$amount + "%"}; }
 }
+
+h1 {
+    color: $color-headline;
+    font-family: $headline-font;
+}
