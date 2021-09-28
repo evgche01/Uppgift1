@@ -27,15 +27,18 @@ html, body {
     border: 1px solid transparent;
     color: $color-light;
     font-weight: bold;
-    background: rgb(242,55,121);
+    background: rgb(242, 55, 121);
     background: linear-gradient(90deg, rgb(242, 55, 120) 30%, rgb(255, 104, 3) 80%, rgb(255, 164, 46) 100%);
 }
 
 .button:hover {
-    background: $color-orange;
-    background: linear-gradient(90deg, rgb(255, 164, 46) 30%, rgb(255, 104, 3) 80%, rgb(242, 55, 120) 100%);
+    // background-color: $color-light;
+    background: transparent;
+    color: $color-dark;
+    border: 1px solid $color-orange;
+    // background: linear-gradient(90deg, rgb(255, 164, 46) 30%, rgb(255, 104, 3) 80%, rgb(242, 55, 120) 100%);
     cursor: pointer;
-    transition: ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 
 .container {
