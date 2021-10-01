@@ -16,12 +16,13 @@
     }
 
     .navbar-links {
-        z-index: 3;
+        
 
         display: none;
         align-items: center;
 
         @include lg {
+            z-index: 3;
             display: flex;
         }
 
