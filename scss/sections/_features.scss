@@ -1,17 +1,28 @@
 #features {
     .container {
-        display:flex;
-        // display: grid;
-        // grid-template-columns: 1fr 2fr;
-        // grid-template-rows: auto auto;
-        margin-top: 2rem;
+
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        align-items: center;
+        position: relative;
+
+        @include lg {
+            display:flex;
+            margin-top: 2rem;
+        }
+
     }
 
         .features-content {
 
+            text-align: center;
+
+            @include lg {
+                text-align: start;
+            }
+
             ul {
-                // list-style: none;
-                // padding-left: 0;
                 width: 450px;
 
                 li:first-child {
@@ -19,8 +30,12 @@
                     font-family: $headline-font;
                     font-size: 48px;
                     font-weight: bold;
-                    line-height: 1.25;
-                    padding-bottom: 1.2rem;
+                    
+
+                    @include lg {
+                        line-height: 1.25;
+                        padding-bottom: 1.2rem;
+                    }
                 }
 
                 li:last-child {
@@ -28,22 +43,6 @@
                     padding-bottom: 1.5rem;
                 }
             }
-            
-
-            // h1 {
-            //     width: 400px;
-            //     // color: $color-headline;
-            //     // font-family: $headline-font;
-            //     // font-size: 48px;
-            //     line-height: 1.2;
-            //     padding-bottom: 2rem;
-            // }
-
-            // p {
-            //     width: 450px;
-            //     padding-bottom: 2rem;
-            //     line-height: 1.6;
-            // }
 
             button {
                 padding-top: 16px;
@@ -53,61 +52,50 @@
         }
     
         .features-items {
-            // text-align: center;
-            padding-left: 50px;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            width: 800px;
-            row-gap: 4rem;
-            column-gap: 10rem;
 
-            .item {
-                    // ul {
-                    //     list-style: none;
-                    //     padding-left: 0;
-                        
-                    li:first-child {
-                        color: $color-headline;
-                        font-family: $headline-font;
-                        font-size: 22px;
-                        font-weight: bold;
-                        margin-top: 5px;
-                        padding-bottom: 1rem;
-                    }
+            text-align: center;
 
-                    li:last-child {
-                        line-height: 1.6;
-                    }
+                .item {         
+                    max-width: 80%;
 
-                    // li:first-child {
-                    //     color: red;
-                    //     font-family: $headline-font;
-                    // }
-                    // h1 {
-                    //     font-size: 22px;
-                    //     color: $color-headline;
-                    //     // font-family: $headline-font;
-                    //     padding-bottom: 1rem;
-                    // }
-                    // p {
-                    //     line-height: 1.6;
-                    // }
+                        li:first-child {
+                            color: $color-headline;
+                            font-family: $headline-font;
+                            font-size: 1rem;
+                            font-weight: bold;
+                            margin-top: 5px;
+                            padding-bottom: 1rem;
+                        }
 
-                
-                // }
+                        li:last-child {
+                            
+                            line-height: 1.6;
+                            font-size: .75rem;
+                        }
+                }
 
-            // .item1 {
+                @include lg {
+                    padding-left: 50px;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(2, 1fr);
+                    width: 800px;
+                    row-gap: 4rem;
+                    column-gap: 10rem;
 
-                // h1 {
-                //     font-size: 22px;
-                //     color: $color-headline;
-                //     font-family: $headline-font;
-                //     padding-bottom: 1rem;
-                // }
-                // p {
-                //     line-height: 1.6;
-                // }
-            }
+                    .item {                        
+                        li:first-child {
+                            font-size: 1.22rem;
+                            font-weight: bold;
+                            margin-top: 5px;
+                            padding-bottom: 1rem;
+                        }
+
+                        li:last-child {
+                            line-height: 1.6;
+                        }
+                }
+                }
+            
         }
 }
