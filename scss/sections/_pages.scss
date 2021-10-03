@@ -14,14 +14,11 @@
         position: relative;
         top: 0;
         
-
         @include xl {
             display: inline-block;
             position: relative;
             transform: translate(-45px, 150px);
         }
-
-        
     }
 
     .main-content {
